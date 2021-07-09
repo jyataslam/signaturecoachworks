@@ -1,0 +1,20 @@
+.success {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    padding-bottom: 5rem;
+    text-align: center;
+    padding: 250px 20px 100px;
+    background: black;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+
+}
+
+a {
+    margin-top: 1rem;
+}

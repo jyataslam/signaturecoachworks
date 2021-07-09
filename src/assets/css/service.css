@@ -1,0 +1,20 @@
+.service_item_new {
+    color: white;
+    text-align: center;
+}
+
+.secondary_text_desc {
+    margin-top: 54px;
+}
+
+.storage_image {
+    width: 100%;
+    height: 400px;
+}
+
+@media only screen and (max-width: 550px){
+    .service_item_new {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+}

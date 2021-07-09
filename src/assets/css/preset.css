@@ -1,0 +1,418 @@
+
+
+/*=======================================================================
+[Table of contents]
+=========================================================================
+
+1. Font Settings
+2. Typography Settings
+3. Section Title Settings
+4. Button Settings
+5. Section Settings
+*/
+
+/*------------------------------------------------------------------------------
+/ 1. Font Settings
+------------------------------------------------------------------------------*/
+/* @import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&family=Fjalla+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Montserrat&family=Lato:wght@400&display=swap');
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    line-height: 32px;
+    /* color: #818181; */
+    color: #737373;
+    letter-spacing: 0.64px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    transition: all ease 400ms;
+    -webkit-transition: all ease 400ms;
+    -moz-transition: all ease 400ms;
+}
+p {
+    /* font-weight: 300; */
+    font-size: 16px;
+    letter-spacing: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/*------------------------------------------------------------------------------
+/ 2. Typography Settings
+------------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5 h6{
+    color: #000000;
+    font-weight: 400;
+    margin: 0 0 15px;
+    letter-spacing: 0 !important;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    color: #000;
+    text-decoration: none;
+    transition: all ease 400ms;
+    -webkit-transition: all ease 400ms;
+    -moz-transition: all ease 400ms;
+}
+a:hover, a:focus{
+    text-decoration: none;
+    outline: 0;
+}
+a:focus{
+    color: #fff;
+}
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+/*------------------------------------------------------------------------------
+/ 3. Section Title Settings
+------------------------------------------------------------------------------*/
+.noPadding{
+    padding: 0;
+}
+.noPaddingRight{
+    padding-right: 0;
+}
+.noPaddingLeft{
+    padding-right: 0;
+}
+
+/*------------------------------------------------------------------------------
+/ 4. Button Settings
+------------------------------------------------------------------------------*/
+.common_btn{
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    background: #000000;
+    color: #fff;
+    /* height: 70px; */
+    text-transform: uppercase;
+    text-align: center;
+    padding: 28px 45.5px;
+    padding: 24px 50px;
+    display: inline-block;
+    line-height: .8;
+    letter-spacing: 1.6px;
+    position: relative;
+    outline: none;
+    transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+}
+.common_btn span {
+    position: relative;
+    z-index: 2;
+}
+.common_btn:after {
+    content: "";
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+}
+.common_btn:hover:after{
+    width: 100%;
+}
+.common_btn:hover{
+    color: #000;
+}
+.common_btn.red_bg{
+    padding: 28px 40.5px;
+}
+.common_btn.red_bg:after{
+    /* background: #e62b4a; */
+    background: #0066a5;
+}
+.common_btn.red_bg:hover:after{
+    width: 100%;
+}
+.common_btn.red_bg:hover{
+    color: #fff;
+}
+.common_btn.blue_bg {
+    background: transparent;
+    border: 2px solid rgba(211, 211, 211, 0.6);
+    color: white;
+    border-right: none;
+}
+.common_btn.blue_bg:after {
+    background: #0266a5;
+}
+.common_btn.blue_bg:hover {
+    border: 2px solid #0266a5;
+    border-right: none;
+}
+.common_btn.on_white_bg {
+    color: #0266a5;
+}
+
+/*------------------------------------------------------------------------------
+/ Custom Glowing Button
+------------------------------------------------------------------------------*/
+.glowing_btn {
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    background: #e62b4a;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 28px 45.5px;
+    padding: 24px 50px;
+    display: block;
+    line-height: .8;
+    letter-spacing: 1.6px;
+    position: relative;
+    outline: none;
+}
+.glowing_btn:before {
+    content: "";
+    background: linear-gradient(
+      124deg,
+      #ff2400,
+      #e81d1d,
+      #e8b71d,
+      #e3e81d,
+      #1de840,
+      #1ddde8,
+      #2b1de8,
+      #dd00f3,
+      #dd00f3
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+
+  .menu__btn {
+    display: flex;
+    flex: 0 0 0;
+    align-items: center;
+    position: fixed;
+    z-index: 8888;
+    justify-content: flex-end;
+    margin-left: 4px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #133054;
+    box-shadow: 0 0 60px rgb(10 36 88 / 45%);
+    height: 70px;
+    width: 70px;
+    transition: all .2s;
+  }
+  .menu__btn-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu__btn-span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #133054;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    line-height: 28px;
+    white-space: nowrap;
+    margin: 0;
+    width: 100%;
+  }
+  .menu__btn-open {
+      background: #133054;
+  }
+  .menu__btn-open span {
+      color: white;
+  }
+  
+  .glowing_btn:hover {
+      color: lightgrey;
+  }
+  
+  .glowing_btn:hover:before {
+    opacity: 1;
+  }
+  
+  .glowing_btn:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+/*------------------------------------------------------------------------------
+/ 5. Section Settings
+------------------------------------------------------------------------------*/
+.commonSection{
+    padding: 120px 0;
+    position: relative;
+}
+.commonSection .container{
+    position: relative;
+    z-index: 2;
+}
+.grays{
+    background: #f5f6fa;
+}
+.sub_title{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    /* line-height: .8; */
+    line-height: 1;
+    font-weight: 700;
+    /* color: #818181; */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+    color: #e62b4a;
+}
+.sec_title{
+    /* font-size: 50px; */
+    /* font-size: 41px; */
+    font-size: 3.9rem;
+    /* line-height: 60px; */
+    /* line-height: 48px; */
+    line-height: 69px;
+    /* font-weight: 400; */
+    font-weight: bold;
+    color: #123154;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin: 0 0 25px;
+    white-space: pre-line;
+}
+.red_color{
+    color: #e62b4a;
+    /* color: #0066a5; */
+}
+.slider-two__btn-right:after {
+    background-color: #e62b4a !important;
+}
+.white{
+    color: #ffffff;
+}
+.blue {
+    color: #123154;
+}
+.btn__black-font {
+    color: #000;
+}
+.common_btn:hover .btn__black-font {
+    color: white;
+}
+.sec_desc{
+    margin: 0 0 54px;
+    white-space: pre-line;
+}
+.single-page__half-header {
+    position: absolute !important;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.dark__bg {
+    opacity: .5 !important;
+}
+
+.color_aaa{
+    color: #aaaaaa;
+}
+.color_333 {
+    color: #333;
+}
+.color_ededed {
+    color: #ededed;
+}
+.opaque__bg-image {
+    height: 100%;
+    width: 100%;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    opacity: .7 !important;
+}
+
+
+.google-map__contact-page {
+    width: 100%;
+    height: 609px;
+}
+.google-map__contact-page iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.google-map__location-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.google-map__location-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}

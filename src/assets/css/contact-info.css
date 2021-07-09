@@ -1,0 +1,19 @@
+.client_2 img {
+    width: 100%;
+}
+
+.location__image {
+    height: 430px;
+}
+
+@media only screen and (max-width: 768px) {
+    .location__image {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .location__image {
+        height: 200px;
+    }
+}

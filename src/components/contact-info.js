@@ -5,7 +5,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 import GoogleMap from "@/components/google-map.js";
 
-const ContactInfos = () => {
+const ContactInfo = () => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -34,7 +34,6 @@ const ContactInfos = () => {
           <div className="col-lg-6 col-sm-12 text-left location-section__text">
             <h4 className="sub_title">{subTitle}</h4>
             <h2 className="sec_title">{title}</h2>
-            {/* <p className="sec_desc">{description}</p> */}
           </div>
         </div>
       </div>
@@ -42,4 +41,4 @@ const ContactInfos = () => {
   );
 };
 
-export default ContactInfos;
+export default ContactInfo;

@@ -5,14 +5,14 @@ import Footer from "@/components/footer";
 import SalesTwo from "@/components/sales-two";
 import StorageHome from "@/components/storage-home";
 import PortfolioHome from "@/components/portfolio-home";
-import ContactInfos from "@/components/contact-infos";
+import ContactInfo from "@/components/contact-info";
 import Testimonials from "@/components/testimonials-carousel";
 import ServiceTwo from "@/components/service-two";
 import About from "@/components/about-hero";
 import HeaderOne from "@/components/header-one";
 import SearchContextProvider from "@/context/search-context";
 import MenuContextProvider from "@/context/menu-context";
-import SliderTwo from "@/components/slider-two";
+import SliderHome from "@/components/slider-home";
 import SEO from "@/components/seo";
 import seoImg from "../images/logo-card.jpg";
 
@@ -28,10 +28,10 @@ const HomeOne = () => {
           />
           <Quote />
           <HeaderOne />
-          <SliderTwo />
+          <SliderHome />
           <About />
           <ServiceTwo />
-          <ContactInfos />
+          <ContactInfo />
           <Testimonials />
           <StorageHome />
           <SalesTwo />

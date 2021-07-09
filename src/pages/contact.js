@@ -2,7 +2,7 @@ import React from "react";
 import SEO from "@/components/seo";
 import Footer from "@/components/footer";
 import Layout from "@/components/layout";
-import ContactInfos from "@/components/contact-infos";
+import ContactInfo from "@/components/contact-info";
 import ContactForm from "@/components/contact-form";
 import PageBanner from "@/components/page-banner";
 import SearchContextProvider from "@/context/search-context";
@@ -26,7 +26,7 @@ const ContactPage = () => {
           <HeaderOne />
           <PageBanner title="Contact Us" name="Contact" />
           <ContactForm />
-          <ContactInfos />
+          <ContactInfo />
           <Footer />
         </Layout>
       </SearchContextProvider>

@@ -7,7 +7,7 @@ import PageBanner from "@/components/page-banner";
 import CallToActionOne from "@/components/call-to-action-one";
 import Quote from "@/components/quote";
 import TestimonialsOneCarousel from "@/components/testimonials-carousel";
-import FeatureTabOne from "@/components/feature-tab-1";
+import FeatureTab from "@/components/feature-tab";
 import HeaderOne from "@/components/header-one";
 import SearchContextProvider from "@/context/search-context";
 import MenuContextProvider from "@/context/menu-context";
@@ -43,7 +43,7 @@ const AboutPage = () => {
           <Quote />
           <HeaderOne />
           <PageBanner title="About Us" name="About" image={headerImg} />
-          <FeatureTabOne />
+          <FeatureTab />
           <TestimonialsOneCarousel regularPadding="regular_padding" />
           <CallToActionOne extraClassName="ready_2" buttonClass="red_bg" />
           <Footer />
